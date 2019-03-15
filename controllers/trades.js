@@ -1,9 +1,9 @@
 module.exports = function(app) {
     var controller = {}
     
-    controller.removeTransactions = function (req, res){
-        var _id = req.params.id;
-        trades.remove({"_id": _id }).exec()
+    controller.removetrade = function (req, res){
+        
+        trade.remove.all.exec()
         .then(
             function() {
                 res.status(201).end();
