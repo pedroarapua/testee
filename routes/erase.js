@@ -7,6 +7,6 @@ var trades = require('../controllers/trades');
 module.exports = function(app){
     var controller = app.controllers.trades
     
-    app.route('/trades/:id')
-    .delete(controller.removetrades)
+    app.route('/trade');
+    .delete(controller.removetrade);
 };
