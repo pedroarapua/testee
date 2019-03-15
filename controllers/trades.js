@@ -3,7 +3,7 @@ module.exports = function(app) {
     
     controller.removetrade = function (req, res){
         
-        trade.remove.all.exec()
+        trade.remove(all).exec()
         .then(
             function() {
                 res.status(201).end();
