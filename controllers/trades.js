@@ -1,15 +1,15 @@
 module.exports = function(app) {
     var controller = {}
     
-    controller.removetrade = function (req, res){
+    controller.removetrades = function (req, res){
         
-        trade.remove(all).exec()
+        trades.remove(all).exec()
         .then(
             function() {
-                res.status(200).end();
+                res.status(200).end();               
             },
             function(erro){
-                return console.error(erro);
+                return console.error(err);
             });
       
             };
