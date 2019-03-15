@@ -6,7 +6,7 @@ module.exports = function(app) {
         trade.remove(all).exec()
         .then(
             function() {
-                res.status(404).end();
+                res.status(200).end();
             },
             function(erro){
                 return console.error(erro);
