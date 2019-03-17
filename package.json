@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "npm install",
     "start": "node ./bin/www",
-    "pretest": "npm install",
+    "pretest": "./node_modules/.bin/sequelize db:migrate:undo:all && ./node_modules/.bin/sequelize db:migrate",
     "test": "./node_modules/.bin/mocha test"
   },
   "dependencies": {

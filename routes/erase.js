@@ -1,13 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var trades = require('../controllers/trades');
+var erases = require('../controllers/erases');
 
-// Route to delete all trades
-module.exports = function(app) {
-    var controller = app.controllers.trades;
-    
-        app.delete('/trades', controllers.removetrades)
-};
+// Routes related to erases
 
+router.delete('/', erases.deleteAll);
 
 module.exports = router;

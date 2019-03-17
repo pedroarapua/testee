@@ -9,6 +9,7 @@ var index = require('./routes/index');
 var erase = require('./routes/erase');
 var trades = require('./routes/trades');
 var stocks = require('./routes/stock');
+var users = require('./routes/users');
 
 
 var app = express();
@@ -30,6 +31,7 @@ app.use('/', index);
 app.use('/trades', trades);
 app.use('/erase', erase);
 app.use('/stocks', stocks);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
